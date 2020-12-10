@@ -1,0 +1,155 @@
+body {
+    margin: 0 auto;
+    height: 100vh;
+  }
+.video {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+  .wrapper {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+  }
+  .time-btns :nth-child(-n+2) {
+    margin-bottom: 100px;
+  }
+  .time-btn {
+      padding: 20px 40px;
+      border: 2px solid white;
+      color: white;
+      font-size: 24px;
+      transition: .5s;
+  }
+  .time-btn:hover {
+      color: black;
+      background-color: white;
+      cursor: pointer;
+  }
+  .circle-bar-play {
+      position: relative;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      border: 2px solid black;
+      background: radial-gradient(white, #FFA9A1);
+      overflow: hidden;
+  }
+  .circle-bar-play::before {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      top: 20px;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      z-index: 3;
+      background-color: black;
+  }
+  .play-img {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      height: 20px;
+      width: 20px;
+      z-index: 4;
+  }
+  .piece-left {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+  }
+  .piece-left::before {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      background-color: white
+  }
+  .piece-left-rotated {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transform: rotate(180deg);
+  }
+  .piece-left-rotated::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: radial-gradient(white, #FFA9A1);
+  }
+  .piece-right {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+    z-index: 1;
+  }
+.piece-right::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+  }
+  .video-icons-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .video-img {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+      background-position: center;
+  }
+  .first-video {
+      background-image: url('../half-moon.png');
+  }
+  .second-video {
+    background-image: url('../wave.png');
+}
+@media screen and (max-width: 762px) {
+    body {
+        background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #352A3B)
+    }
+    .video {
+        position: static;
+        height: 40%;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 60%;
+    }
+    .time-btns {
+        display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+    }
+    .time-btns :nth-child(-n+2) {
+        margin-bottom: 0px;
+    }
+    .time-btn {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+    .video-icons-wrapper {
+        flex-direction: row;
+    }
+      .first-video {
+        width: 60px;
+        height: 60px;
+      }
+      .second-video {
+        width: 60px;
+        height: 60px;
+      }
+}
