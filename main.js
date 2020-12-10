@@ -13,7 +13,7 @@ function startFunction() {
         clearInterval(stop);
     }
     else {
-        playImg.src = 'pause.png';
+        playImg.src = 'https://valeri-afk.github.io/Valeri-afk.github.io8/pause.png';
         function rotateFunction() {
             video.play();
             if(counter < 180) {
