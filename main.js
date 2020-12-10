@@ -1,5 +1,5 @@
 let video = document.querySelector('.video');
-let duration = 3703.141587;
+let duration = 97;
 let counter = 0;
 let pieceRight = document.querySelector('.piece-right');
 let pieceLeft = document.querySelector('.piece-left');
