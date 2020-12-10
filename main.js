@@ -7,13 +7,12 @@ let playImg = document.querySelector('.play-img');
     
 playImg.addEventListener('click', startFunction);
 function startFunction() {
-    if(playImg.src === 'pause.png') {
+    if(playImg.src === 'https://valeri-afk.github.io/Valeri-afk.github.io8/pause.png') {
         playImg.src = 'play.png';
         video.pause();
         clearInterval(stop);
     }
     else {
-        console.log(playImg.src)
         playImg.src = 'pause.png';
         function rotateFunction() {
             video.play();
