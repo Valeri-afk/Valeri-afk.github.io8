@@ -110,10 +110,10 @@ body {
       background-position: center;
   }
   .first-video {
-      background-image: url('../half-moon.png');
+      background-image: url('half-moon.png');
   }
   .second-video {
-    background-image: url('../wave.png');
+    background-image: url('wave.png');
 }
 @media screen and (max-width: 762px) {
     body {
