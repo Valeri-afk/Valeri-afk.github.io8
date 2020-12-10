@@ -7,7 +7,7 @@ let playImg = document.querySelector('.play-img');
     
 playImg.addEventListener('click', startFunction);
 function startFunction() {
-    if(playImg.src === 'http://127.0.0.1:5500/pause.png') {
+    if(playImg.src === 'pause.png') {
         playImg.src = 'play.png';
         video.pause();
         clearInterval(stop);
