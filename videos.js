@@ -17,7 +17,7 @@ clearInterval(stop);
 for(i=0; i<timeBtn.length; i++) {
 timeBtn[i].addEventListener('click', dropFunction);
 function dropFunction(event) {
-   video.currentTime = Number(event.target.dataset.min * 60);
+   video.currentTime = Number(event.target.dataset.sec);
    counter = Number((360/duration)*video.currentTime);
 }
 }
