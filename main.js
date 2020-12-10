@@ -13,6 +13,7 @@ function startFunction() {
         clearInterval(stop);
     }
     else {
+        console.log(playImg.src)
         playImg.src = 'pause.png';
         function rotateFunction() {
             video.play();
